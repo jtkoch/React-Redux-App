@@ -1,7 +1,7 @@
-import { FETCHING_BREWERY_START, FETCHING_BREWERY_SUCCESS } from "../actions";
+import { FETCHING_BREWERY_START, FETCHING_BREWERY_SUCCESS, FETCHING_BREWERY_FAILURE } from "../actions";
 
 const initialState = {
-  brewery: null,
+  brewery: [],
   isFetching: false,
   error: ""
 };
@@ -20,7 +20,12 @@ export const reducer = (state = initialState, action) => {
         isFetching: false,
         brewery: action.payload
       };
+    case FETCHING_BREWERY_FAILURE:
+      return {
+        ...state,
+        error: action.payload
+      }  
     default:
-      return state;   
+      return {...state};   
   }
 }

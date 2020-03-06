@@ -14,6 +14,7 @@ function App(props) {
 
   return (
     <div className="App">
+      <h1>Breweries</h1>
       <button onClick={loadBrewery}>Check out a new brewery</button>
       <Breweries isFetching={props.isFetching} brewery={props.brewery} />
     </div>

@@ -2,9 +2,10 @@ import React from 'react';
 
 const BreweryCard = (props) => {
   return (
-    <div>
+    <div className="brewery-card">
       <h1>{props.breweryName}</h1>
-      <p>{props.address}</p>
+      <p>Brewery Type: {props.brewery_type}</p>
+      <p>Location: {props.city}, {props.state}</p>
     </div>
   )
 }

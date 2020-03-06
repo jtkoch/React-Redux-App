@@ -8,7 +8,7 @@ const Breweries = (props) => {
       {props.isFetching ? (<p>Fetching a brewery now :)</p>) : 
       (
     <div>
-      {props.brewery.map( (brewery) =>  <BreweryCard key={brewery.id} breweryName={brewery.name} address={brewery.street} />)}
+      {props.brewery.map( (brewery) =>  <BreweryCard key={brewery.id} breweryName={brewery.name} brewery_type={brewery.brewery_type} city={brewery.city} state={brewery.state}/>)}
     </div> 
       )}
     </div>

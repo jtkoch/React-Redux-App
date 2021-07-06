@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+  padding: 10px;
+  background-color: gray;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: blueviolet;
+}
+
+.brewery-card {
+  border: 3px solid black;
+  width: 550px;
+  margin: 50px;
+  background-color: goldenrod;
+}
